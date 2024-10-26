@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f2ddbdb-c117-44ef-b226-580e36acf93e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sdm - uam/sdm-d1193f5ae9c3e460e9e1d0b98ecfd0259dd997cc/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3f2ddbdb-c117-44ef-b226-580e36acf93e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +33,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Rebasing main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/vinizzord/Documents/Spring Boot/estudos",
+    "last_opened_file_path": "/home/vinizzord/Documents/Spring Boot/estudos spring/estudos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,7 +43,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.EstudosApplication">
+    <configuration name="EstudosApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="estudos" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.vinicin.estudos.EstudosApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EstudosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="estudos" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.estudos.EstudosApplication" />
@@ -73,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729892851070</updated>
       <workItem from="1729892852411" duration="1853000" />
-      <workItem from="1729894723799" duration="7930000" />
+      <workItem from="1729894723799" duration="8418000" />
     </task>
     <servers />
   </component>
