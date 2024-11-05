@@ -22,14 +22,12 @@ public class StudentConfig {
                     1L,
                     "Mariam",
                     "mariam.jamal@gmail.com",
-                    LocalDate.of(2000, JANUARY, 5),
-                    21
+                    LocalDate.of(2000, JANUARY, 5)
             );
             Student alex = new Student(
                     "Alex",
                     "alex.lele@gmail.com",
-                    LocalDate.of(2004, JANUARY, 5),
-                    21
+                    LocalDate.of(2004, JANUARY, 5)
             );
 
             repository.saveAll( // Jpa method that we have instantiated in the repository.

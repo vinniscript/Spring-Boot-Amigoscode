@@ -3,6 +3,7 @@ package br.com.learningspring.learningwithamigos.student;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 @Entity // -> Hibernate will create a table in the database with the name of the class (our java).
 @Table // -> This annotation is used to indicate the name of the table in the database (our postgres).
@@ -23,7 +24,9 @@ public class Student { // This class is a model, it represents the data that wil
     private String name;
     private String email;
     private LocalDate dob;
+    @Transient // This annotation is used to indicate that this field will not be persisted in the database.
     private Integer age;
+    // We can calculate the age based on the dob, there is no need to store it in the database.
 
 //    public Student(Long id) { // Our constructor
 //
@@ -32,24 +35,19 @@ public class Student { // This class is a model, it represents the data that wil
     public Student(Long id, // This constructor is used to create a new student.
                    String name,
                    String email,
-                   LocalDate dob,
-                   int age
-    ) {
+                   LocalDate dob) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.age = age;
     }
 
     public Student(String name, // A constructor without the id, the database will generate it.
                    String email,
-                   LocalDate dob,
-                   int age) {
+                   LocalDate dob) {
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.age = age;
     }
 
     public Student() {
@@ -75,7 +73,7 @@ public class Student { // This class is a model, it represents the data that wil
     }
 
     public int getAge() {
-        return age;
+        return Period.between(this.dob, LocalDate.now()).getYears(); // This method calculates the age based on the dob.
     }
 
     public void setAge(int age) {
